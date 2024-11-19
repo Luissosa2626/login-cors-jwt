@@ -23,6 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/logs" element={<LogsPage />} />
 
           {/*Private Routes */}
           <Route element={<ProtectedRoute />}>
@@ -30,7 +31,7 @@ function App() {
             <Route path="/add-task" element={<TaskFormPage />} />
             <Route path="/tasks/:id" element={<TaskFormPage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/logs" element={<LogsPage />} />
+            {/* <Route path="/logs" element={<LogsPage />} /> */}
           </Route>
         </Routes>
       </main>

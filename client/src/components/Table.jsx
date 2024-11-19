@@ -20,7 +20,7 @@ function Table({users}) {
             <td>{user.username}</td>
             <td>{user.id}</td>
             <td>{user.email}</td>
-            <td>{user.updatedAt}</td>
+            <td>{new Date(user.updatedAt).toLocaleDateString()}</td>
           </tr>
         </tbody>
       </table>
