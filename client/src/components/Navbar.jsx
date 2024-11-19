@@ -7,14 +7,17 @@ function Navbar() {
   return (
     <nav className="bg-zinc-700 my-3 flex justify-between py-5 px-10 rounded-lg">
       <Link to={isAuthenticated ? '/tasks' : '/'}>
-        <h1 className="text-2xl font-bold">Task Manager</h1>
+        <h1 className="text-2xl font-bold">Auth Project</h1>
       </Link>
       <ul className="flex gap-x-2">
         {isAuthenticated ? (
           <>
-            <li>Welcome {user.username}</li>
+            <li>Bienvenido {user.username}</li>
             <li>
-              <Link to="/add-task" className="bg-indigo-500 px-4 py-1 rounded-sm">Add Task</Link>
+              <Link to="/add-task" className="bg-indigo-500 px-4 py-1 rounded-sm">Gestion usuario</Link>
+            </li>
+            <li>
+              <Link to="/logs" className="bg-indigo-500 px-4 py-1 rounded-sm">Ver logs</Link>
             </li>
             <li>
               <Link
@@ -26,9 +29,6 @@ function Navbar() {
                 Logout
               </Link>
             </li>
-            {/* <li>
-              <Link to="/add-task">Gestion de usuarios</Link>
-            </li> */}
           </>
         ) : (
           <>

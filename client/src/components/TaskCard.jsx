@@ -19,7 +19,8 @@ const {deleteTask} = useTasks()
         </div>
         </header>
         <p className="text-slate-300">{task.description}</p>
-         <p>{new Date(task.date).toLocaleDateString()}</p>
+         <p>{task.createdAt}</p>
+         <p>{task.updatedAt}</p>
     </div>
   )
 }

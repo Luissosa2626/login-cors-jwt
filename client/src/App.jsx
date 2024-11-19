@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import ProtectedRoute from "./ProtectedRoute";
 import {TaskProvider} from "./context/TaskContext";
 import Navbar from "./components/Navbar";
+import LogsPage from "./pages/LogsPage";
 function App() {
   return (
     <AuthProvider>
@@ -29,6 +30,7 @@ function App() {
             <Route path="/add-task" element={<TaskFormPage />} />
             <Route path="/tasks/:id" element={<TaskFormPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/logs" element={<LogsPage />} />
           </Route>
         </Routes>
       </main>

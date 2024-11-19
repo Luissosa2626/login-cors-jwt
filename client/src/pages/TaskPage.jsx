@@ -10,7 +10,6 @@ function TaskPage() {
 
     // if(tasks.length === 0) return (<h1>No Tasks</h1>) 
 
-    // Gestion de usuarios
     return (
         <div className="grid ms:grid-cols-2 md:grid-cols-3 gap-2">
             {tasks.map((task) => (
